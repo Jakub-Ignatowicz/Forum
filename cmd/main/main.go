@@ -1,17 +1,7 @@
 package main
 
-import (
-	"log"
-	"database/sql"
-)
+import "forum/internal/db"
 
-
-func main()  {
-	var err error
-	db, err := sql.Open("sqlite", "./forum.db")
-	if err != nil {
-		log.Fatal(err)
-	}
-	initDB()
-
+func main() {
+	db.Init()
 }
