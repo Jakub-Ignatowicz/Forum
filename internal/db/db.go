@@ -3,6 +3,7 @@ package db
 import (
 	"database/sql"
 	"log"
+	_ "modernc.org/sqlite"
 )
 
 var DB *sql.DB
